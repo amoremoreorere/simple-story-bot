@@ -1,1 +1,1 @@
-# simple-story-bot
+# carter-moscow-bot
