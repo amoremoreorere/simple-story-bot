@@ -1,1 +1,1 @@
-worker: python carter-moscow-bot.py
+worker: python simple-story-bot.py
