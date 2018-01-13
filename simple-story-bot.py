@@ -10,7 +10,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    sent = bot.send_message(message.chat.id, message.from_user.first_name + ',привет! Это простой экспериментальный смс-рассказ. И ты можешь стать частью этой небольшой истории. Каким образом? ')
+    sent = bot.send_message(message.chat.id, message.from_user.first_name + ',привет! Это простой экспериментальный смс-рассказ. И ты можешь стать частью этой небольшой истории. Каким образом? Выбирай от чьего лица ты будешь читать переписку... При нескольких вариантах ответа, жми на сообщения по очереди :) ')
     markup = types.ReplyKeyboardMarkup()
     markup.row('ОН', 'OНA')
     bot.send_message(message.chat.id, 'Итак, от какого лица тебе интересно будет читать - главного героя или героини? ', reply_markup=markup)
